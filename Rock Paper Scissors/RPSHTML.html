@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock, Paper, Scissors!</title>
+    <style>
+      #result-screen {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: black;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.507);
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      body {
+        font-family: sans-serif;
+        font-size: 2vh;
+      }
+
+      #button-container {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100px;
+        display: flex;
+        justify-content: center;
+      }
+
+      button {
+        font-family: sans-serif;
+        font-size: 3vh;
+        width: 200px;
+        font-weight: bold;
+        margin: 0 10px;
+        margin-bottom: 10px;
+        background-color: white ;
+        border-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 5px 8px 1px rgba(0, 0, 0);
+      }
+
+      #stats-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #ccc;
+        padding: 20px;
+    }
+
+      #stats-bar h2 {
+        font-family: sans-serif;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="button-container">
+      <button id="rock" type="button">Rock</button>
+      <button id="paper" type="button">Paper</button>
+      <button id="scissors" type="button">Scissors</button>
+    </div>
+
+    <h1 id="result-screen">
+      <!--Where the results go-->
+      Press a button to start...
+    </h1>
+
+    <div id="stats-bar">
+        <h2>Stats:</h2>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Draws: <span id="draws">0</span></p>
+      </div>
+
+    <script src="RPSJS.js"></script>
+  </body>
+</html>
